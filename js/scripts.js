@@ -79,6 +79,18 @@
 
     });
 
+    // Toggle experience details
+    $('.experience-tab').on('click', function() {
+        var $button = $(this);
+        var detailsId = $button.attr('aria-controls');
+        var $details = $('#' + detailsId);
+        var isOpen = $button.attr('aria-expanded') === 'true';
+
+        $button.attr('aria-expanded', String(!isOpen));
+        $button.text(isOpen ? 'View details' : 'Hide details');
+        $details.prop('hidden', isOpen);
+    });
+
     // Open mobile menu
     $('#mobile-menu-open').click(function() {
         $('header, body').addClass('active');
