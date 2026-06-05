@@ -257,6 +257,39 @@
     display:block;
 }
 
+/* Acheivements section styling */
+#achievements{
+    background:linear-gradient(135deg, #f0f7ff 0%, #f7f2ff 100%);
+}
+
+#achievements .optional-section-block{
+    border:1px solid rgba(52,152,219,0.25);
+    box-shadow:0 12px 24px rgba(52,152,219,0.12);
+}
+
+#achievements .optional-section-block ul{
+    list-style:none;
+    padding-left:0;
+}
+
+#achievements .optional-section-block li{
+    position:relative;
+    padding:8px 10px 8px 34px;
+    margin-bottom:8px;
+    background:#fff;
+    border-radius:10px;
+    border:1px solid #eef3fb;
+}
+
+#achievements .optional-section-block li:before{
+    content:"★";
+    position:absolute;
+    left:12px;
+    top:7px;
+    color:#f5a623;
+    font-size:1em;
+}
+
 .profile-wrap .profile-img{
     width:100%;
     height:100%;
